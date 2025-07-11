@@ -2,11 +2,11 @@ package com.user.service;
 
 import java.util.List;
 
-import com.user.dto.UsersDTO;
+import com.user.dto.UserDTO;
 
 public interface IUserService {
-	void registerUser(UsersDTO userDTO);
-	void registerAdmin(UsersDTO userDTO);
+	void registerUser(UserDTO userDTO);
+	void registerAdmin(UserDTO userDTO);
 	
-	List<UsersDTO> showAllUser();
+	List<UserDTO> showAllUser();
 }

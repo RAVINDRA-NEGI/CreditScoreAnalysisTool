@@ -1,0 +1,9 @@
+package com.user.mapper;
+
+import com.user.dto.UsersDTO;
+import com.user.entity.Users;
+
+public class UserMapping {
+ 
+	 public static UsersDTO maptoUserDTO(User user)
+}

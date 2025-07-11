@@ -1,5 +1,78 @@
 package com.user.service.impl;
 
-public class UserServiceImpl {
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.user.dto.UserDTO;
+import com.user.entity.User;
+import com.user.entity.User.Role;
+import com.user.exception.AdminAlreadyExistsException;
+import com.user.exception.UserAlreadyExistsException;
+import com.user.repo.UserRepository;
+import com.user.service.IUserService;
+
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class UserServiceImpl implements IUserService {
+
+	private final UserRepository userRepo;
+	private final PasswordEncoder passwordEncoder;
+	
+	@Override
+	public void registerUser(UserDTO userDTO) {
+		Optional<User> userByEmail = userRepo.findByEmail(userDTO.getEmail());
+		Optional<User> userByUsername = userRepo.findByUserName(userDTO.getUserName());
+		if(userByEmail.isPresent() || userByUsername.isPresent()) {
+			throw new UserAlreadyExistsException("User already registered with the given email or username"+
+						userDTO.getEmail()+  " / " + userDTO.getUserName());
+		}
+		User user = new User();
+		user.setEmail(userDTO.getEmail());
+		user.setUserName(userDTO.getUserName());
+		user.setPassword(passwordEncoder.encode(userDTO.getPassword()));
+		user.setRole(Role.USER);
+		userRepo.save(user);
+	}
+
+	@Override
+	public void registerAdmin(UserDTO userdto) {
+	    Optional<User> userByEmail = userRepo.findByEmail(userdto.getEmail());
+	    Optional<User> userByUsername = userRepo.findByUserName(userdto.getUserName());
+
+	    if (userByEmail.isPresent() || userByUsername.isPresent()) {
+	        throw new AdminAlreadyExistsException(
+	            "Admin already registered with email or username: " +
+	            userdto.getEmail() + " / " + userdto.getUserName());
+	    }
+
+	    User user = new User();
+	    user.setEmail(userdto.getEmail());
+	    user.setUserName(userdto.getUserName());
+	    user.setPassword(passwordEncoder.encode(userdto.getPassword()));
+	    user.setRole(Role.ADMIN);
+	    userRepo.save(user);
+	}
+
+	@Override
+	public List<UserDTO> showAllUser() {
+		List<User> users =  userRepo.findAll();
+		
+		return users.stream()
+				.map( user ->{
+					UserDTO dto = new UserDTO();
+					dto.setEmail(user.getEmail());
+					dto.setUserName(user.getUserName());
+					dto.setRole(user.getRole());
+					return dto;
+				})
+				.collect(Collectors.toList());
+	}
 
 }
