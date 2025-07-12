@@ -4,6 +4,11 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +18,7 @@ import com.user.constants.Constants;
 import com.user.dto.ResponseDTO;
 import com.user.dto.UserDTO;
 import com.user.service.IUserService;
+import com.user.service.impl.MyUserDetailsService;
 
 import lombok.AllArgsConstructor;
 
@@ -22,6 +28,10 @@ import lombok.AllArgsConstructor;
 public class UserController {
 	
 	private final IUserService iUserService;
+	
+	AuthenticationManager authenticationManager;
+	
+	MyUserDetailsService myUserDetailsService;
 	
 	@PostMapping("/userregister")
 	public ResponseEntity<ResponseDTO> registerUser(@RequestBody UserDTO userDTO){
@@ -43,6 +53,31 @@ public class UserController {
 		return ResponseEntity
 				.status(HttpStatus.ACCEPTED)
 				.body(users);
+		
+	}
+	
+	@PostMapping("/login")
+	public ResponseEntity<String> login(@RequestBody UserDTO userDTO){
+		
+		try {
+			Authentication authentication = authenticationManager.authenticate(
+					new UsernamePasswordAuthenticationToken(userDTO.getEmail(), userDTO.getPassword())
+					);
+			if(authentication.isAuthenticated()) {
+				UserDetails userDetails = myUserDetailsService.loadUserByUsername(userDTO.getUserName());
+				return  ResponseEntity.ok("Login Successful");
+			   } else {
+		            // Shouldn't really reach here if authentication throws on failure
+		            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid credentials");
+		        }
+		    } catch (BadCredentialsException e) {
+		        // Incorrect email/password
+		        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid credentials");
+		    } catch (Exception e) {
+		        // Log the exception optionally
+		        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+		                             .body("An internal error occurred");
+		    }
 		
 	}
 }

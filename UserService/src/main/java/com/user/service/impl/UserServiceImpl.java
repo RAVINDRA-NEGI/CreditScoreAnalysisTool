@@ -30,7 +30,7 @@ public class UserServiceImpl implements IUserService {
 		Optional<User> userByEmail = userRepo.findByEmail(userDTO.getEmail());
 		Optional<User> userByUsername = userRepo.findByUserName(userDTO.getUserName());
 		if(userByEmail.isPresent() || userByUsername.isPresent()) {
-			throw new UserAlreadyExistsException("User already registered with the given email or username"+
+			throw new UserAlreadyExistsException("User already registered with the given email or username "+
 						userDTO.getEmail()+  " / " + userDTO.getUserName());
 		}
 		User user = new User();
@@ -38,6 +38,7 @@ public class UserServiceImpl implements IUserService {
 		user.setUserName(userDTO.getUserName());
 		user.setPassword(passwordEncoder.encode(userDTO.getPassword()));
 		user.setRole(Role.USER);
+		
 		userRepo.save(user);
 	}
 
