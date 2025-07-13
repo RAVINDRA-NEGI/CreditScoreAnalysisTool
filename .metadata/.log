@@ -2696,3 +2696,745 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-12 23:14:02.812
+!MESSAGE [Info] Document is null for editor: SecurityConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-12 23:14:02.818
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/ravin/Desktop/projects/New%20folder/New%20folder/UserService/src/main/java/com/user/config/SecurityConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-12 23:14:02.971
+!MESSAGE [Info] Document is null for editor: MyUserDetailsService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-12 23:14:02.973
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/ravin/Desktop/projects/New%20folder/New%20folder/UserService/src/main/java/com/user/service/impl/MyUserDetailsService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-12 23:14:03.073
+!MESSAGE [Info] Document is null for editor: UserServiceImpl.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-12 23:14:03.118
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/ravin/Desktop/projects/New%20folder/New%20folder/UserService/src/main/java/com/user/service/impl/UserServiceImpl.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-12 23:14:03.281
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-12 23:14:03.283
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/ravin/Desktop/projects/New%20folder/New%20folder/UserService/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-12 23:14:03.471
+!MESSAGE [Info] Document is null for editor: UserController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-12 23:14:03.473
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/ravin/Desktop/projects/New%20folder/New%20folder/UserService/src/main/java/com/user/controller/UserController.java
+!SESSION 2025-07-13 10:51:05.721 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-13 10:51:15.939
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-07-13 10:51:16.359
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.29.0 (2511) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-13 10:51:27.921
+!MESSAGE Logback config file: C:\Users\ravin\Desktop\projects\New folder\New folder\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-07-13 10:51:29.300
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-13 10:51:29.300
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 4 4 2025-07-13 10:51:29.773
+!MESSAGE Invalid workspace location to be set for Edge browser.
+!STACK 0
+java.net.URISyntaxException: Illegal character in path at index 41: file:/C:/Users/ravin/Desktop/projects/New folder/New folder/.metadata/.plugins/org.eclipse.swt
+	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3166)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3248)
+	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+	at java.base/java.net.URI.<init>(URI.java:645)
+	at java.base/java.net.URL.toURI(URL.java:1220)
+	at org.eclipse.ui.internal.Workbench.setEdgeDataDirectory(Workbench.java:530)
+	at org.eclipse.ui.internal.Workbench.<init>(Workbench.java:461)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:598)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.ui 2 0 2025-07-13 10:51:30.018
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-13 10:51:30.018
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-07-13 10:51:41.564
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\ravin\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/Users/ravin/Desktop/projects/New folder/New folder/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1752384101562
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Users\ravin\eclipse\jee-2023-09\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.59.0.202411281450\servers\spring-boot-language-server\spring-boot-language-server-1.59.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-13 10:51:41.564
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-07-13 10:51:41.587
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 12096
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 10:51:47.364
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 10:51:47.405
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-13 10:51:47.865
+!MESSAGE Boot project ADDED: UserService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-13 10:51:47.872
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-13 10:51:47.875
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-07-13 10:51:48.356
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ravin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 10:51:48.585
+!MESSAGE [Info] No proxy data found
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 10:51:51.647
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.276.0 initialized
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:55.323
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 10:51:55.994
+!MESSAGE [Info]	[certificates] Removed 99 expired certificates
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.591
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.596
+!MESSAGE Could not send USER event 'Anonymous ID: addd3fcf-9c52-4f18-ac29-0eb21803ed0b': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.598
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.601
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.605
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.610
+!MESSAGE Could not send USER event 'Anonymous ID: addd3fcf-9c52-4f18-ac29-0eb21803ed0b': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.615
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.617
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.629
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.635
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.637
+!MESSAGE Could not send USER event 'Anonymous ID: addd3fcf-9c52-4f18-ac29-0eb21803ed0b': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.639
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.642
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.647
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.650
+!MESSAGE Could not send USER event 'Anonymous ID: addd3fcf-9c52-4f18-ac29-0eb21803ed0b': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.653
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.655
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.669
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.671
+!MESSAGE Could not send USER event 'Anonymous ID: addd3fcf-9c52-4f18-ac29-0eb21803ed0b': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.674
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-07-13 10:51:56.676
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.eclipse.equinox.p2.director 2 10054 2025-07-13 10:52:21.573
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE Software being installed: artificial_root 1.0.0.v1752384132293
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2025-07-13 10:52:21.573
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE Mylyn WikiText Help UI 3.0.48.202308291007 (org.eclipse.mylyn.wikitext.help.ui 3.0.48.202308291007)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE Mylyn WikiText Help UI 4.5.0.v20241002-1142 (org.eclipse.mylyn.wikitext.help.ui 4.5.0.v20241002-1142)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2025-07-13 10:52:21.573
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE From: artificial_root 1.0.0.v1752384132293
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.mylyn.wikitext.feature.feature.group 4.5.0.v20241022-1702
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2025-07-13 10:52:21.573
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE From: artificial_root 1.0.0.v1752384132293
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.mylyn.wikitext_feature.feature.group 0.0.0
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2025-07-13 10:52:21.573
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE From: Mylyn WikiText Editors 3.0.48.202308291007 (org.eclipse.mylyn.wikitext.editors_feature.feature.group 3.0.48.202308291007)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.mylyn.wikitext.help.ui [3.0.48.202308291007,3.0.48.202308291007]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2025-07-13 10:52:21.573
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE From: Mylyn WikiText 4.5.0.v20241022-1702 (org.eclipse.mylyn.wikitext.feature.feature.group 4.5.0.v20241022-1702)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.mylyn.wikitext.help.ui [4.5.0.v20241002-1142,4.5.0.v20241002-1142]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2025-07-13 10:52:21.573
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE From: Mylyn WikiText 3.0.48.202308291007 (org.eclipse.mylyn.wikitext_feature.feature.group 3.0.48.202308291007)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-07-13 10:52:21.573
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.mylyn.wikitext.editors_feature.feature.group [3.0.48.202308291007,3.0.48.202308291007]
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2025-07-13 10:52:21.578
+!MESSAGE Setup tasks were performed during startup. See 'C:\Users\ravin\eclipse\jee-2023-09\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 11:11:26.635
+!MESSAGE [Info] Java format preference cache for UserService is updated. key: org.eclipse.jdt.core.formatter.tabulation.char, new value: tab
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 11:11:26.638
+!MESSAGE [Info] Java format preference cache for UserService is updated. key: org.eclipse.jdt.core.formatter.tabulation.size, new value: 4
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 11:13:32.151
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 11:13:32.154
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 11:13:32.158
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 11:13:32.161
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 11:13:32.202
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 11:13:32.218
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.jface 2 0 2025-07-13 11:13:32.900
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-07-13 11:13:32.900
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:16:43.609
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 591.8804999887943 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:16:43.779
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [ffeb0620-ffed-48f7-b441-283985c9f003] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:16:43.781
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:16:44.602
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 764.0489999949932 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:16:48.420
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:16:48.421
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [6b1c89fe-371c-4bf9-a88b-ade2137b3215] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:16:48.899
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 482.6860000193119 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:16:49.102
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:16:49.106
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [5bf36677-b858-4f2a-8916-a278c33c6e09] model deployment ID: []
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 11:18:13.144
+!MESSAGE [Info] Completion request timed out after 5000 milliseconds
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:18:14.603
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:18:14.606
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 4917.111099988222 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:18:14.607
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [9226ecc9-47dc-48a8-a907-cb602241374e] model deployment ID: []
+
+!ENTRY org.eclipse.ui 4 0 2025-07-13 11:18:18.128
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4903)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.getLineAtOffset(DefaultDocumentAdapter.java:184)
+	at org.eclipse.swt.custom.StyledTextRenderer.hasLink(StyledTextRenderer.java:684)
+	at org.eclipse.swt.custom.StyledText.doMouseLinkCursor(StyledText.java:2317)
+	at org.eclipse.swt.custom.StyledText.doMouseLinkCursor(StyledText.java:2311)
+	at org.eclipse.swt.custom.StyledText.redraw(StyledText.java:7379)
+	at com.microsoft.copilot.eclipse.ui.utils.SwtUtils.lambda$2(SwtUtils.java:162)
+	at com.microsoft.copilot.eclipse.ui.utils.SwtUtils.invokeOnDisplayThread(SwtUtils.java:70)
+	at com.microsoft.copilot.eclipse.ui.utils.SwtUtils.redrawBlockLineAtModelOffset(SwtUtils.java:142)
+	at com.microsoft.copilot.eclipse.ui.completion.CompletionManager.caretMoved(CompletionManager.java:299)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1197)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1182)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:852)
+	at org.eclipse.swt.custom.StyledText.setCaretOffsets(StyledText.java:8601)
+	at org.eclipse.swt.custom.StyledText.setSelection(StyledText.java:9877)
+	at org.eclipse.swt.custom.StyledText.updateSelection(StyledText.java:10846)
+	at org.eclipse.swt.custom.StyledText.handleTextChanged(StyledText.java:6082)
+	at org.eclipse.swt.custom.StyledText$5.textChanged(StyledText.java:5404)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.fireTextChanged(DefaultDocumentAdapter.java:315)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.documentChanged(DefaultDocumentAdapter.java:258)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(AbstractDocument.java:731)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:708)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:692)
+	at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(AbstractDocument.java:766)
+	at org.eclipse.jface.text.projection.ProjectionDocument.fireDocumentChanged(ProjectionDocument.java:772)
+	at org.eclipse.jface.text.projection.ProjectionDocument.masterDocumentChanged(ProjectionDocument.java:742)
+	at org.eclipse.jface.text.projection.ProjectionDocumentManager.fireDocumentEvent(ProjectionDocumentManager.java:126)
+	at org.eclipse.jface.text.projection.ProjectionDocumentManager.documentChanged(ProjectionDocumentManager.java:132)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(AbstractDocument.java:739)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:708)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:692)
+	at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(AbstractDocument.java:766)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1091)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.replace(SynchronizableDocument.java:176)
+	at org.eclipse.text.undo.DocumentUndoManager$UndoableTextChange.undoTextChange(DocumentUndoManager.java:148)
+	at org.eclipse.text.undo.DocumentUndoManager$UndoableTextChange.undo(DocumentUndoManager.java:262)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.doUndo(DefaultOperationHistory.java:399)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.undo(DefaultOperationHistory.java:1141)
+	at org.eclipse.ui.operations.UndoActionHandler.runCommand(UndoActionHandler.java:86)
+	at org.eclipse.ui.operations.OperationHistoryActionHandler.lambda$0(OperationHistoryActionHandler.java:294)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:434)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:354)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+	at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.access$1(TimeTriggeredProgressMonitorDialog.java:1)
+	at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.lambda$0(TimeTriggeredProgressMonitorDialog.java:154)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.run(TimeTriggeredProgressMonitorDialog.java:166)
+	at org.eclipse.ui.operations.OperationHistoryActionHandler.run(OperationHistoryActionHandler.java:320)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:124)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:569)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:644)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:439)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1332)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1172)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1197)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1182)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1224)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1220)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1703)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4854)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:347)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4732)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3788)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:18:19.797
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 1417.7546999752522 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:18:20.448
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:18:20.450
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [23b68945-0f5e-4740-8d38-e2e584a452d0] model deployment ID: []
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 11:18:28.483
+!MESSAGE [Info] Auto show completion is now false
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:20:30.301
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.githubcopilot.com/chat/completions] took 3064.4353000223637 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:20:30.878
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:20:31.737
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [d954c4c6-ed88-4530-83a4-6218cb9a043c] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:20:32.646
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.githubcopilot.com/chat/completions] took 872.5945000052452 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:20:36.996
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:20:36.997
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [d11ce8c0-5c2c-4a67-93d3-a370e1274b56] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:20:37.475
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.githubcopilot.com/chat/completions] took 497.42900002002716 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:20:37.642
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-13 11:20:37.644
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [d4db90d2-14b2-41f9-bd9d-7b82aac6f08e] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-07-13 11:44:22.933
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 11:47:29.562
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 11:47:29.565
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/ravin/Desktop/projects/New%20folder/New%20folder/UserService/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 11:52:45.734
+!MESSAGE [Info] Document is null for editor: UserPrincipal.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 11:52:45.736
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/ravin/Desktop/projects/New%20folder/New%20folder/UserService/src/main/java/com/user/entity/UserPrincipal.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 12:42:50.665
+!MESSAGE [Info] Document is null for editor: JwtFilter.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 12:42:50.674
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/ravin/Desktop/projects/New%20folder/New%20folder/UserService/src/main/java/com/user/JwtFilter.java
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 12:49:16.096
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 12:49:16.101
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 12:49:16.104
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 12:49:16.109
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 12:49:16.162
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 12:49:16.181
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-13 12:49:51.942
+!MESSAGE Classpath changed for project: UserService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-13 12:49:52.748
+!MESSAGE Classpath changed for project: UserService
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 12:57:28.583
+!MESSAGE [Info] Document is null for editor: Constants.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 12:57:28.585
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/ravin/Desktop/projects/New%20folder/New%20folder/UserService/src/main/java/com/user/constants/Constants.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 12:57:31.951
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 12:57:31.952
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/ravin/Desktop/projects/New%20folder/New%20folder/UserService/pom.xml
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 13:00:17.151
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 13:00:17.154
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 13:00:17.157
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 13:00:17.161
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 13:00:17.180
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 13:00:17.188
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-13 13:02:44.531
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/ravin/Desktop/projects/New%20folder/New%20folder/UserService/src/main/java/com/user/filter/JwtAuthFilter.java
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-07-13 13:06:23.053
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 13:06:47.150
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 13:06:47.153
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 13:06:47.158
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 13:06:47.161
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 13:06:47.191
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-13 13:06:47.205
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.jdt.ui 4 0 2025-07-13 13:33:27.257
+!MESSAGE OperationCanceledException computing hover information in UserController.java at offset 2802
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:239)
+	at org.eclipse.jdt.internal.core.ClassFile.getJarBinaryTypeInfo(ClassFile.java:225)
+	at org.eclipse.jdt.internal.core.ClassFile.getBinaryTypeInfo(ClassFile.java:186)
+	at org.eclipse.jdt.internal.core.ClassFile.buildStructure(ClassFile.java:78)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:246)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:127)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:569)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:292)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:278)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:1142)
+	at org.eclipse.jdt.internal.core.BinaryType.getFlags(BinaryType.java:357)
+	at org.eclipse.jdt.internal.core.SearchableEnvironmentRequestor.acceptType(SearchableEnvironmentRequestor.java:127)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypesInBinaryPackage(NameLookup.java:1510)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1442)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1348)
+	at org.eclipse.jdt.internal.core.NameLookup.findAllTypes(NameLookup.java:422)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1418)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1348)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:964)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:766)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:592)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:571)
+	at org.eclipse.jdt.internal.codeassist.SelectionEngine.select(SelectionEngine.java:1048)
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:167)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:471)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:461)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getJavaElementsAt(AbstractJavaEditorTextHover.java:122)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.lambda$0(JavadocHover.java:713)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5694)
+	at org.eclipse.jdt.internal.core.JavaModelManager.callReadOnly(JavaModelManager.java:5683)
+	at org.eclipse.jdt.core.JavaCore.callReadOnly(JavaCore.java:6150)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:713)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:709)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 78 :
+-----
+			String input  =userDTO.getUserName() != null ? userDTO.getUserName() : userDTO.getEmail();
+			String password = userDTO.getPassword();
+			
+			Authentication authentication = authenticationManager.authenticate(
+	                new UsernamePasswordAuthenticationToken(input, password)
+	        );
+			if(authentication.isAuthenticated()) {
+				UserDetails userDetails = myUserDetailsService.loadUserByUsername(userDTO.getEmail());
+
+				String jwt = jwtUtil.generateToken(userDetails);
+				return  ResponseEntity.ok(|j);
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:150)
+		at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getJavaElementsAt(AbstractJavaEditorTextHover.java:124)
+		... 10 more
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-07-13 13:52:34.557
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-07-13 14:01:48.232
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-07-13 14:01:51.671
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.jdt.ui 4 0 2025-07-13 14:02:37.108
+!MESSAGE OperationCanceledException computing hover information in UserController.java at offset 2457
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:239)
+	at org.eclipse.jdt.internal.core.ClassFile.getJarBinaryTypeInfo(ClassFile.java:225)
+	at org.eclipse.jdt.internal.core.ClassFile.getBinaryTypeInfo(ClassFile.java:186)
+	at org.eclipse.jdt.internal.core.ClassFile.buildStructure(ClassFile.java:78)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:246)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:127)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:569)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:292)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:278)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:1142)
+	at org.eclipse.jdt.internal.core.BinaryType.getFlags(BinaryType.java:357)
+	at org.eclipse.jdt.internal.core.SearchableEnvironmentRequestor.acceptType(SearchableEnvironmentRequestor.java:127)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypesInBinaryPackage(NameLookup.java:1510)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1442)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1348)
+	at org.eclipse.jdt.internal.core.NameLookup.findAllTypes(NameLookup.java:422)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1418)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1348)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:964)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:766)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:592)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:571)
+	at org.eclipse.jdt.internal.codeassist.SelectionEngine.select(SelectionEngine.java:1048)
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:167)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:471)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:461)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getJavaElementsAt(AbstractJavaEditorTextHover.java:122)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.lambda$0(JavadocHover.java:713)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5694)
+	at org.eclipse.jdt.internal.core.JavaModelManager.callReadOnly(JavaModelManager.java:5683)
+	at org.eclipse.jdt.core.JavaCore.callReadOnly(JavaCore.java:6150)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:713)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:709)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 74 :
+-----
+	@PostMapping("/login")
+	public ResponseEntity<String> login(@RequestBody UserDTO userDTO){
+		
+		try {
+			String input ;
+			if(userDTO.getUserName() != null) {
+				input = userDTO.getUserName();
+			}else if(userDTO.getEmail() != null) {
+				input = userDTO.getEmail();
+				
+			}|el
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:150)
+		at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getJavaElementsAt(AbstractJavaEditorTextHover.java:124)
+		... 10 more

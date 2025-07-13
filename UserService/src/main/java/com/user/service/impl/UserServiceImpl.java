@@ -1,5 +1,8 @@
 package com.user.service.impl;
 
+
+
+import java.sql.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
@@ -7,6 +10,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
 
 import com.user.dto.UserDTO;
 import com.user.entity.User;
@@ -38,7 +42,7 @@ public class UserServiceImpl implements IUserService {
 		user.setUserName(userDTO.getUserName());
 		user.setPassword(passwordEncoder.encode(userDTO.getPassword()));
 		user.setRole(Role.USER);
-		
+		user.setCreatedAt(new Date(System.currentTimeMillis()));
 		userRepo.save(user);
 	}
 
@@ -57,6 +61,7 @@ public class UserServiceImpl implements IUserService {
 	    user.setEmail(userdto.getEmail());
 	    user.setUserName(userdto.getUserName());
 	    user.setPassword(passwordEncoder.encode(userdto.getPassword()));
+	    user.setCreatedAt(new Date(System.currentTimeMillis()));
 	    user.setRole(Role.ADMIN);
 	    userRepo.save(user);
 	}
