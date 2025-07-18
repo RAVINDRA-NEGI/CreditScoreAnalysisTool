@@ -81,7 +81,7 @@ public class UserController {
 	                new UsernamePasswordAuthenticationToken(input, password)
 	        );
 			if(authentication.isAuthenticated()) {
-				UserDetails userDetails = myUserDetailsService.loadUserByUsername(userDTO.getEmail());
+				UserDetails userDetails = myUserDetailsService.loadUserByUsername(input);
 
 				String jwt = jwtUtil.generateToken(userDetails);
 				return  ResponseEntity.ok(jwt);
