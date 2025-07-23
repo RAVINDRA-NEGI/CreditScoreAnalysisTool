@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: UserService
-  security:
-    user:
-      name: raj
-      password: 1234

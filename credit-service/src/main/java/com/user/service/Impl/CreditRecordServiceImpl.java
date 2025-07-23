@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.user.dto.CreditRecordRequest;
 import com.user.dto.CreditRecordResponse;
@@ -13,6 +14,8 @@ import com.user.exception.ResourceNotFoundExceptionException;
 import com.user.repository.CreditRecordRepository;
 import com.user.service.CreditRecordService;
 
+
+@Service
 public class CreditRecordServiceImpl  implements CreditRecordService{
 	   @Autowired
 	    private CreditRecordRepository repository;
@@ -31,7 +34,7 @@ public class CreditRecordServiceImpl  implements CreditRecordService{
 
 	    @Override
 	    public List<CreditRecordResponse> getRecordsByUser(Long userId) {
-	        return repository.findbyUserId(userId)
+	        return repository.findByUserId(userId)
 	                .stream()
 	                .map(this::toResponse)
 	                .collect(Collectors.toList());

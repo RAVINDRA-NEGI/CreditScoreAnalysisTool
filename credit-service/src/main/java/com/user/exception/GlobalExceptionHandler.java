@@ -5,7 +5,6 @@ import java.time.LocalDateTime;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
@@ -30,11 +29,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	        return new ResponseEntity<>(errorResponseDTO , HttpStatus.NOT_FOUND);
 	    } 
 
-	    @ExceptionHandler(MethodArgumentNotValidException.class)
-	    public ResponseEntity<String> handleValidation(MethodArgumentNotValidException ex) {
-	        String errorMessage = ex.getBindingResult().getAllErrors().get(0).getDefaultMessage();
-	        return ResponseEntity.badRequest().body(errorMessage);
-	    }
+	
 
 	    @ExceptionHandler(IllegalStateException.class)
 	    public ResponseEntity<String> handleIllegalState(IllegalStateException ex) {

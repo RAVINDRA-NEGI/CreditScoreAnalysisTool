@@ -9,5 +9,5 @@ import com.user.entity.CreditRecord;
 
 @Repository
 public interface CreditRecordRepository extends JpaRepository<CreditRecord, Long>{
-	List<CreditRecord> findbyUserId( long LongId);
+	List<CreditRecord> findByUserId( long LongId);
 }

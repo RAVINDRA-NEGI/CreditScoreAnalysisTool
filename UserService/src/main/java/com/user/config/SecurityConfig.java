@@ -27,8 +27,8 @@ public class SecurityConfig {
 	SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception{
 		
 		http.authorizeHttpRequests(request -> request
-				.requestMatchers("/api/allusers").hasRole("ADMIN")
-				.requestMatchers("/api/userregister", "/api/adminregister","/api/login").permitAll()
+				.requestMatchers("/api/user/allusers").hasRole("ADMIN")
+				.requestMatchers("/api/user/userregister", "/api/user/adminregister","/api/user/login").permitAll()
 				.anyRequest().authenticated())
 			.csrf( csf -> csf.disable())
 			.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED))
