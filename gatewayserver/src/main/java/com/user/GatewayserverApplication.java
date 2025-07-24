@@ -21,14 +21,22 @@ public class GatewayserverApplication {
 						    .filters(f ->f
 						    		.addRequestHeader("X-GATEWAY-KEY", "super-secret-key")
 						    		.rewritePath("/api/credit/(?<segment>.*)" ,"/${segment}"))
-							.uri("lb://CREDIT-SERVICE"))
+							.uri("lb://CREDIT-RECORD-SERVICE"))
 				.route(r -> r
 							.path("/api/user/**")
 							.filters(f ->f
 									.addRequestHeader("X-GATEWAY-KEY", "super-secret-key")
 									.rewritePath("/api/user/(?<segment>.*)" ,"/${segment}"))
-							.uri("lb://USERSERVICE"))
+							.uri("lb://USER-MANAGEMENT-SERVICE"))
+				.route(r-> r
+							.path("/api/score/**")
+							.filters(f -> f
+									.addRequestHeader("X-GATEWAY-KEY", "super-secret-key")
+									.rewritePath("/api/score/(?<segment>.*)" ,"/${segment}"))
+							.uri("lb://CREDIT-SCORE-SERVICE"))
 							.build();
 	}
 
 }
+
+

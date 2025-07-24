@@ -1,0 +1,23 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: "credit-score-service"
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+  endpoint:
+    shutdown:
+      access: unrestricted
