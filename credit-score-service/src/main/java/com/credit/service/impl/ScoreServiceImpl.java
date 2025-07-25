@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import com.credit.dto.CreditRecordDTO;
 import com.credit.dto.ScoreResponse;
 import com.credit.service.ScoreService;
-import com.credit.service.client.CreditRecordServiceClient;
+import com.credit.service.client.CreditRecordServiceFeignClient;
 
 import lombok.AllArgsConstructor;
 
@@ -21,7 +21,7 @@ public class ScoreServiceImpl implements ScoreService {
 	  private static final Logger logger = LoggerFactory.getLogger(ScoreServiceImpl.class);
 
 	   
-	    private final CreditRecordServiceClient creditServiceClient;
+	    private final CreditRecordServiceFeignClient creditServiceClient;
 
 	    @Override
 	    public ScoreResponse calculateScore(Long userId) {

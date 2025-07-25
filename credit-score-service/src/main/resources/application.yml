@@ -4,6 +4,10 @@ spring:
   application:
     name: "credit-score-service"
 
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
 eureka:
   instance:
     prefer-ip-address: true
@@ -21,3 +25,14 @@ management:
   endpoint:
     shutdown:
       access: unrestricted
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        permitted-number-of-calls-in-half-open-state: 3
+        wait-duration-in-open-state: 10000ms
+        failure-rate-threshold: 50
+        event-consumer-buffer-size: 10

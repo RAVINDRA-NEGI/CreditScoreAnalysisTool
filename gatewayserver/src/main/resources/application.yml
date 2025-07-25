@@ -10,7 +10,12 @@ spring:
         locator:
           enabled: false
           lower-case-service-id: true
-
+  data:
+    redis:
+      connect-timeout: 1000
+      host: localhost
+      port: 6379
+      timeout: 1s
 eureka:
   instance:
     prefer-ip-address: true
@@ -29,3 +34,14 @@ management:
   endpoint:
     gateway:
       access: unrestricted
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        permitted-number-of-calls-in-half-open-state: 3
+        wait-duration-in-open-state: 10000ms
+        failure-rate-threshold: 50
+        event-consumer-buffer-size: 10
